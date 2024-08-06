@@ -1,0 +1,106 @@
+*{
+    color:rgb(85 41 29 / 83%);
+    background-color: rgba(138, 165, 42, 0);
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./bg_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1; /* Ensure it stays behind the content */
+    opacity: 0.3;
+}
+
+.background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here (0.5 is 50% opacity) */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Ensure it stays above the background */
+    min-height: 100vh; /* Ensures content takes at least full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px; /* Add padding for better readability */
+}
+.details{
+    width:50%;
+    margin:0% 35%;
+    height: 70%;
+    opacity: 1.5;
+    border: 5px solid rgb(85 41 29 / 83%);
+    border-radius:20px;
+    
+}
+
+.inner{
+    width:50%;
+    margin:auto;
+}
+.submit_btn{
+    width:70%;
+    margin:auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.btnc{
+    background-color: rgba(138, 165, 42, 0);
+    border:3px solid rgb(85 41 29 / 83%); 
+    border-radius: 5px;
+}
+#btn{
+    width:100%;
+    background-color: brown;
+    color:rgba(48, 12, 1, 0.83);
+    border:3px solid  rgb(85 41 29 / 83%); 
+    border-radius: 7px;
+}
+#predicted_price{
+    width:50%;
+    margin:auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border:3px solid  rgb(85 41 29 / 83%); 
+    border-radius: 7px;
+  background-color: rgb(5, 123, 115);
+  text-align: center;
+  color:rgba(48, 12, 1, 0.83);
+}
+#sqft{
+    color:rgb(85 41 29 / 83%);
+}
+.drop{
+    width:80%;
+    border:3px solid  rgb(85 41 29 / 83%); 
+    border-radius: 7px;
+}
+.head{
+    position:sticky;
+    top: 0;
+    color:rgb(5, 123, 115);;
+    
+}
