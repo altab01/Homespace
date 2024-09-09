@@ -1,2 +1,3 @@
-# Homespace
-Web development project with uses of ml concepts to create homespace which predicts the rent of Homes in the area
+<H1>Home Price Prediction System</H1> 
+<p>Integrated Web development and ML concepts to create Home price Prediction System for two metropolitan cities "Delhi and Bangalore"</p>
+
