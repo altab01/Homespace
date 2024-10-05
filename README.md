@@ -1,37 +1,41 @@
-<h1 align="center">HomePricePro</h1>
+<h1 align="center" style="font-family: Arial, sans-serif; color: #2C3E50;">🏡 HomePricePro 🏡</h1>
 
-<p align="center">
-  <strong>A Web Application for Predicting House Prices</strong><br>
-  Predict house prices in Bangalore and Delhi using machine learning models and Flask.
+<p align="center" style="font-family: Arial; font-size: 18px; color: #34495E;">
+  <strong>Predict house prices in Bangalore and Delhi using machine learning models and Flask.</strong>
 </p>
 
-<h2>Features</h2>
-<ul>
-  <li>Predict house prices in multiple cities.</li>
-  <li>Flask backend with machine learning model integration.</li>
-  <li>Input parameters: city, square footage, number of bathrooms, BHK, location.</li>
-  <li>Supports price prediction for cities like Bangalore and Delhi.</li>
+<p align="center">
+  <img src="https://img.shields.io/badge/python-v3.8-blue" alt="Python 3.8">
+  <img src="https://img.shields.io/badge/flask-v2.0.1-green" alt="Flask">
+</p>
+
+<h2 style="color: #2980B9;">✨ Features</h2>
+<ul style="font-family: Arial; color: #7F8C8D;">
+  <li>Predict house prices in multiple cities using trained models.</li>
+  <li>Flask-based backend with machine learning model integration.</li>
+  <li>Input parameters include: city, square footage, number of bathrooms, BHK, and location.</li>
+  <li>Supports price prediction for Bangalore and Delhi.</li>
 </ul>
 
-<h2>Demo</h2>
-<p>You can run the application locally by following the <a href="#installation">Installation</a> instructions.</p>
+<h2 style="color: #2980B9;">🚀 Demo</h2>
+<p>You can run the application locally by following the <a href="#installation">Installation</a> instructions below.</p>
 
-<h2>Technologies Used</h2>
-<ul>
+<h2 style="color: #2980B9;">💻 Technologies Used</h2>
+<ul style="font-family: Arial; color: #7F8C8D;">
   <li><strong>Frontend:</strong> HTML, CSS, JavaScript, Bootstrap</li>
   <li><strong>Backend:</strong> Flask, NumPy, Pickle</li>
   <li><strong>Machine Learning Models:</strong> Pre-trained models for Bangalore and Delhi</li>
 </ul>
 
-<h2 id="installation">Installation</h2>
-<h3>Prerequisites</h3>
-<ul>
+<h2 id="installation" style="color: #2980B9;">⚙️ Installation</h2>
+<h3 style="font-family: Arial; color: #34495E;">Prerequisites</h3>
+<ul style="font-family: Arial; color: #7F8C8D;">
   <li>Python 3.x</li>
   <li>pip (Python package manager)</li>
 </ul>
 
-<h3>Steps</h3>
-<ol>
+<h3 style="font-family: Arial; color: #34495E;">Steps</h3>
+<ol style="font-family: Arial; color: #7F8C8D;">
   <li><strong>Clone the repository:</strong></li>
   <pre><code>git clone https://github.com/your-username/HomePricePro.git
 cd HomePricePro</code></pre>
@@ -49,46 +53,35 @@ pip install -r requirements.txt</code></pre>
   <p>The Flask server should be running at <code>http://127.0.0.1:5000</code>.</p>
 </ol>
 
-<h2>Usage</h2>
-<ol>
-  <li>Once the server is running, open <code>http://127.0.0.1:5000</code> in your browser.</li>
-  <li>Fill in the form by selecting a city, square footage, number of bathrooms, BHK, and location.</li>
-  <li>Click on the "Predict Price" button to get the estimated price of the house.</li>
-</ol>
+<h2 style="color: #2980B9;">📊 API Endpoints</h2>
 
-<h2>API Endpoints</h2>
-
-<h3>1. <code>/get_location_names</code> [GET]</h3>
-<p>Fetches the available location names for a given city.</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-  <li><code>city</code>: The city for which you want to fetch locations (e.g., <code>benglore</code>, <code>delhi</code>).</li>
+<h3><code>/get_location_names</code> [GET]</h3>
+<p>Fetches available location names for a given city.</p>
+<ul style="font-family: Arial; color: #7F8C8D;">
+  <li><strong>Parameters:</strong> <code>city</code> (e.g., 'benglore', 'delhi')</li>
 </ul>
-
-<p><strong>Response:</strong></p>
 <pre><code>{
   "locations": ["location1", "location2", "location3"]
 }</code></pre>
 
-<h3>2. <code>/predict_price</code> [POST]</h3>
+<h3><code>/predict_price</code> [POST]</h3>
 <p>Predicts the price of a house based on user inputs.</p>
-<p><strong>Parameters (form-data):</strong></p>
-<ul>
-  <li><code>city</code>: City name (<code>benglore</code>, <code>delhi</code>)</li>
-  <li><code>sqft</code>: Square footage of the property</li>
-  <li><code>location</code>: Location within the city</li>
-  <li><code>bhk</code>: Number of bedrooms</li>
-  <li><code>bath</code>: Number of bathrooms</li>
+<ul style="font-family: Arial; color: #7F8C8D;">
+  <li><strong>Parameters (form-data):</strong></li>
+  <ul>
+    <li><code>city</code>: City name</li>
+    <li><code>sqft</code>: Square footage of the property</li>
+    <li><code>location</code>: Location within the city</li>
+    <li><code>bhk</code>: Number of bedrooms</li>
+    <li><code>bath</code>: Number of bathrooms</li>
+  </ul>
 </ul>
-
-<p><strong>Response:</strong></p>
 <pre><code>{
   "estimated_price": 120.45
 }</code></pre>
 
-<h2>File Structure</h2>
+<h2 style="color: #2980B9;">📂 File Structure</h2>
 <pre><code>HomePricePro/
-│
 ├── app.py                  # Main Flask application
 ├── controller.py            # Controller with prediction logic and location fetch
 ├── model/
@@ -104,13 +97,13 @@ pip install -r requirements.txt</code></pre>
 ├── requirements.txt         # Python dependencies
 └── README.md                # This README file</code></pre>
 
-<h2>Future Improvements</h2>
-<ul>
+<h2 style="color: #2980B9;">🔧 Future Improvements</h2>
+<ul style="font-family: Arial; color: #7F8C8D;">
   <li>Add more cities for prediction.</li>
   <li>Improve models with more data.</li>
   <li>Deploy the app to a cloud platform (Heroku, AWS).</li>
   <li>Add input validation and error handling.</li>
 </ul>
 
-<h2>License</h2>
-<p>This project is licensed under the MIT License.</p>
+<h2 style="color: #2980B9;">📜 License</h2>
+<p style="font-family: Arial; color: #7F8C8D;">This project is licensed under the MIT License.</p>
