@@ -105,7 +105,7 @@ pip install -r requirements.txt</code></pre>
   <li>Add input validation and error handling.</li>
 </ul>
 
-<h>screenshots</h>
 
-<h2 style="color: #2980B9;">📜 License</h2>
+<h2>SCREENSHOTS</h2>
+<h3 style="color: #2980B9;">📜 License</h3>
 <p style="font-family: Arial; color: #7F8C8D;">This project is licensed under the MIT License.</p>
