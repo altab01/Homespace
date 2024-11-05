@@ -107,5 +107,6 @@ pip install -r requirements.txt</code></pre>
 
 
 <h2>SCREENSHOTS</h2>
+<img src ="![Screenshot (276)](https://github.com/user-attachments/assets/362a4cd0-a93b-4f22-9427-c3a12af29ee3)"/>
 <h3 style="color: #2980B9;">📜 License</h3>
 <p style="font-family: Arial; color: #7F8C8D;">This project is licensed under the MIT License.</p>
